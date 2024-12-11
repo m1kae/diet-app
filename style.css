@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #ddedd9;
+    background: url(https://t3.ftcdn.net/jpg/05/17/54/92/360_F_517549233_fjVR9Kt1GlQqtvsGjb1ThVZAwa3gUviE.jpg);
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+.content-wrapper {
+
+    background-color: #efecec;
+    width: 55vw;
+    height: 100vh;
+}
+
+header {
+    padding: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+
+}
+
+.logo-span {
+    color: green;
+}
+
+.log-in > form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.log-in > form > * {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.log-in > form > input {
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    width: 15em;
+}
+
+.log-in > form > button {
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    width: 15em;
+
+    background-color: rgb(0, 128, 0);
+    color: white;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.log-in > form > button:hover {
+    background-color: rgb(7, 154, 7);
+}
+
+a {
+    color: black;
+}

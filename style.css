@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: auto;
@@ -5,38 +7,59 @@
 }
 
 body {
-    background-color: #ddedd9;
-    background: url(https://t3.ftcdn.net/jpg/05/17/54/92/360_F_517549233_fjVR9Kt1GlQqtvsGjb1ThVZAwa3gUviE.jpg);
-    background-repeat: repeat;
-    background-size: 500px;
-}
+    background: linear-gradient(270deg, #3b9f24, #a8cc9f);
+    background-size: 400% 400%;
 
-.content-wrapper {
+    -webkit-animation: AnimationName 31s ease infinite;
+    -moz-animation: AnimationName 31s ease infinite;
+    animation: AnimationName 31s ease infinite;
 
-    background-color: #efecec;
-    width: 55vw;
-    height: 100vh;
-}
-
-header {
-    padding: 2em 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
 }
 
-.logo {
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
+
+.log-in > h1 {
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .logo-span {
-    color: green;
+    font-family: "Josefin Sans", sans-serif;
+    color: rgb(0, 128, 0);
+}
+
+.log-in {
+    background-color: rgba(228, 227, 227, 0.9);
+    border-radius: .5rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .log-in > form {
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
 }
 
 .log-in > form > * {

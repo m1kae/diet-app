@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/9666d4ab47.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="profile-wrapper">
@@ -12,6 +14,26 @@
             <div class="user-details">
                 <img class="profile-picture" src="https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg" alt="">
                 <p class="profile-name">Sven Svensson's profile</p>
+            </div>
+        </div>
+        <div class="preferences-wrapper">
+            <div class="preference-heading">
+                <div>
+                    <h2>Preferences and allergies</h2>
+                    <h4>Press a category to toggle it</h4>
+                </div>
+                <ul class="preference-legend">
+                    <li class="legend-item legend-like">Like</li>
+                    <li class="legend-item legend-dislike">Dislike</li>
+                    <li class="legend-item legend-allergic">Allergic</li>
+                </ul>
+            </div>
+            <div class="preferences">
+                <button id="fish" class="fa-solid fa-fish food food-like" onclick="toggleFoodPreference('fish')"></button>
+                <button id="egg" class="fa-solid fa-egg food food-dislike" onclick="toggleFoodPreference('egg')"></button>
+                <button id="bacon" class="fa-solid fa-bacon food food-allergic" onclick="toggleFoodPreference('bacon')"></button>
+                <button id="shrimp" class="fa-solid fa-shrimp food food-like" onclick="toggleFoodPreference('shrimp')"></button>
+                <button id="gluten" class="fa-solid fa-wheat-awn food food-like" onclick="toggleFoodPreference('gluten')"></button>
             </div>
         </div>
     </div>

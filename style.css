@@ -11,10 +11,10 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-body {
+.login-body {
     background: linear-gradient(270deg, #3b9f24, #90c583);
     background-size: 400% 400%;
 
@@ -45,22 +45,24 @@ body {
     100%{background-position:0% 50%}
 }
 
-.content-wrapper {
+.login-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90vh;
 }
 
 .logo {
     font-family: "Josefin Sans", sans-serif;
     color: var(--clr-text);
-    padding-bottom: 1.5em;
 }
 
 .logo-span {
     font-family: "Josefin Sans", sans-serif;
     color: var(--clr-primary);
+}
+
+.login-subheading {
+    margin-top: 1.5em;
 }
 
 .log-in {
@@ -178,4 +180,52 @@ body {
 a {
     text-decoration: none;
     color: var(--clr-text);
+}
+
+.profile-body {
+    background-color: rgb(231, 226, 226);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 90vh;
+    margin: auto;
+}
+
+.profile-wrapper {
+    width: 60vw;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    background-color: rgb(0, 128, 0, 0.1);
+    border-radius: .3em;
+    padding: 1em 2em;
+}
+
+.profile-picture {
+    height: 4em;
+    border-radius: 5em;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1em;
+}
+
+.profile-name {
+    font-size: 2rem;
+    line-height: 2em;
+}
+
+.logo-profile {
+    font-size: 2rem;
+    line-height: 2em;
 }

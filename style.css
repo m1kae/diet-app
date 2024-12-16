@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
 }
 
 .logo {
@@ -232,24 +233,82 @@ a {
     line-height: 2em;
 }
 
+.preferences-wrapper {
+    margin: 1em 0;
+    padding: 1em;
+    background-color: rgba(0, 128, 0, 0.1);
+    border-radius: 5px;
+}
+
 .preferences {
     display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    flex-direction: column;
+    justify-content: start;
     gap: .5em;
 }
 
-.food {
-    font-size: 2rem;
-    padding: 1em;
-    color: var(--clr-text);
-    width: 20em;
+.preference-grid {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.food {
+    font-size: 1rem;
+    color: var(--clr-text);
+    width: 28vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: .5em;
+    padding-left: 1em;
+    border-radius: 5px;
+}
+
+.food-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1em;
+}
+
+.food-details > i {
+    width: 20px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+}
+
+.food-details > i, .food-details > p {
+    padding: .75em 0;
+}
+
+.toggle-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.toggle-list :nth-child(1) {
+    border-radius: 5px 0 0 5px;
+}
+
+.toggle-list :nth-child(3) {
+    border-radius: 0 5px 5px 0;
+}
+
+.food-toggle {
+    height: 100%;
     border: none;
-    border-radius: .1em;
+    padding: 0 .5em;
+    width: 3.25em;
     cursor: pointer;
 }
+
+.food-toggle-active {
+    border: 2px solid black;
+}
+
 .food-like, .legend-like {
     background-color: rgba(20, 170, 20, 0.5);
 }
@@ -264,7 +323,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2em 1em;
+    padding: 1em 1em 2em 1em;
 }
 
 .preference-heading h2 {

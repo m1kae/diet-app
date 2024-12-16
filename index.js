@@ -6,22 +6,20 @@ preferences = {
     "gluten": "like"
 }
 
-function toggleFoodPreference(foodCategory){
+function toggleFoodPreference(food, option){
 
-    if (preferences[foodCategory] == "like") {
-        preferences[foodCategory] = "dislike"
-        id(foodCategory).classList.remove("food-like");
-        id(foodCategory).classList.add("food-dislike");
-
-    } else if (preferences[foodCategory] == "dislike") {
-        preferences[foodCategory] = "allergic"
-        id(foodCategory).classList.remove("food-dislike");
-        id(foodCategory).classList.add("food-allergic");
-
+    if (option == "like") {
+        id(food + "Like").classList.add("food-toggle-active");
+        id(food + "Dislike").classList.remove("food-toggle-active");
+        id(food + "Allergic").classList.remove("food-toggle-active");
+    } else if (option == "dislike") {
+        id(food + "Like").classList.remove("food-toggle-active");
+        id(food + "Dislike").classList.add("food-toggle-active");
+        id(food + "Allergic").classList.remove("food-toggle-active");
     } else {
-        preferences[foodCategory] = "like"
-        id(foodCategory).classList.remove("food-allergic");
-        id(foodCategory).classList.add("food-like");
+        id(food + "Like").classList.remove("food-toggle-active");
+        id(food + "Dislike").classList.remove("food-toggle-active");
+        id(food + "Allergic").classList.add("food-toggle-active");
     }
 
 }

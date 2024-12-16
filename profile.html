@@ -28,14 +28,125 @@
                     <li class="legend-item legend-allergic">Allergic</li>
                 </ul>
             </div>
-            <div class="preferences">
-                <button id="fish" class="fa-solid fa-fish food food-like" onclick="toggleFoodPreference('fish')"></button>
-                <button id="egg" class="fa-solid fa-egg food food-dislike" onclick="toggleFoodPreference('egg')"></button>
-                <button id="bacon" class="fa-solid fa-bacon food food-allergic" onclick="toggleFoodPreference('bacon')"></button>
-                <button id="shrimp" class="fa-solid fa-shrimp food food-like" onclick="toggleFoodPreference('shrimp')"></button>
-                <button id="gluten" class="fa-solid fa-wheat-awn food food-like" onclick="toggleFoodPreference('gluten')"></button>
+            <div class="preference-grid">
+            
+                <div class="preferences">
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-fish"></i>
+                            <p>Fish</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button id="fishLike" onclick="toggleFoodPreference('fish', 'like')" class="food-toggle food-like food-toggle-active"></button>
+                            <button id="fishDislike" onclick="toggleFoodPreference('fish', 'dislike')" class="food-toggle food-dislike"></button>
+                            <button id="fishAllergic" onclick="toggleFoodPreference('fish', 'allergic')" class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-egg"></i>
+                            <p>Eggs</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like food-toggle-active"></button>
+                            <button class="food-toggle food-dislike"></button>
+                            <button class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-bacon"></i>
+                            <p>Bacon</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like"></button>
+                            <button class="food-toggle food-dislike"></button>
+                            <button class="food-toggle food-allergic food-toggle-active"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-shrimp"></i>
+                            <p>Shrimp</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like"></button>
+                            <button class="food-toggle food-dislike food-toggle-active"></button>
+                            <button class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                            <p>Gluten</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like food-toggle-active"></button>
+                            <button class="food-toggle food-dislike"></button>
+                            <button class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="preferences">
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-fish"></i>
+                            <p>Fish</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like food-toggle-active"></button>
+                            <button class="food-toggle food-dislike"></button>
+                            <button class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-egg"></i>
+                            <p>Eggs</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like food-toggle-active"></button>
+                            <button class="food-toggle food-dislike"></button>
+                            <button class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-bacon"></i>
+                            <p>Bacon</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like"></button>
+                            <button class="food-toggle food-dislike"></button>
+                            <button class="food-toggle food-allergic food-toggle-active"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-shrimp"></i>
+                            <p>Shrimp</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like"></button>
+                            <button class="food-toggle food-dislike food-toggle-active"></button>
+                            <button class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="food-details">
+                            <i class="fa-solid fa-wheat-awn"></i>
+                            <p>Gluten</p>
+                        </div>
+                        <div class="toggle-list">
+                            <button class="food-toggle food-like food-toggle-active"></button>
+                            <button class="food-toggle food-dislike"></button>
+                            <button class="food-toggle food-allergic"></button>
+                        </div>
+                    </div>
+            
+                </div>
             </div>
         </div>
-    </div>
 </body>
 </html>
